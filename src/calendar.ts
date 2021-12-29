@@ -238,6 +238,7 @@ export enum Step {
                 [dateFormatter]="dateFormatter"
                 [dir]="dir"
                 [lockSwipeToPrev]="lockSwipeToPrev"
+                [lockSwipeToNext]="lockSwipeToNext"
                 [lockSwipes]="lockSwipes"
                 [sliderOptions]="sliderOptions"
                 (onRangeChanged)="rangeChanged($event)"
@@ -269,6 +270,7 @@ export enum Step {
                 [scrollToHour]="scrollToHour"
                 [preserveScrollPosition]="preserveScrollPosition"
                 [lockSwipeToPrev]="lockSwipeToPrev"
+                [lockSwipeToNext]="lockSwipeToNext"
                 [lockSwipes]="lockSwipes"
                 [startHour]="startHour"
                 [endHour]="endHour"
@@ -299,6 +301,7 @@ export enum Step {
                 [scrollToHour]="scrollToHour"
                 [preserveScrollPosition]="preserveScrollPosition"
                 [lockSwipeToPrev]="lockSwipeToPrev"
+                [lockSwipeToNext]="lockSwipeToNext"
                 [lockSwipes]="lockSwipes"
                 [startHour]="startHour"
                 [endHour]="endHour"
@@ -409,6 +412,7 @@ export class CalendarComponent implements OnInit {
     @Input() scrollToHour:number = 0;
     @Input() preserveScrollPosition:boolean = false;
     @Input() lockSwipeToPrev:boolean = false;
+    @Input() lockSwipeToNext:boolean = false;
     @Input() lockSwipes:boolean = false;
     @Input() locale:string = "";
     @Input() startHour:number = 0;
